@@ -115,7 +115,7 @@ class HttpApi
 	 * 
 	 * @return array A full rapresentative response of the curl request
 	 */
-	public function sendSms($to, $message, $gateway_port = \App\Config::SMS_GATEWAY_PORT)
+	public function sendSms($to, $message, $gateway_port = 1)
 	{
     $message = urlencode($message);
 
