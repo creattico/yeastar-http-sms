@@ -12,7 +12,7 @@
             "email": "info@creattica.it"
         }
     ],
-    "minimum-stability": "beta",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "YeastarHttp\\": "src/"
