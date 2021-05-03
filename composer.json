@@ -1,0 +1,21 @@
+{
+    "name": "creattica-web-agency/yeastar-http-sms",
+    "description": "SMS class for yeastar device: allow you to send sms via http API",
+    "type": "library",
+    "require": {
+        "php": ">=7.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "creattico",
+            "email": "info@creattica.it"
+        }
+    ],
+    "minimum-stability": "beta",
+    "autoload": {
+        "psr-4": {
+            "YeastarHttp\\": "src/"
+        }
+    }
+}
