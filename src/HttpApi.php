@@ -1,8 +1,26 @@
 <?php
+
+/**
+ * YeastarHttp - PHP sms class for Yeastar TGxxxx devices.
+ * PHP Version 7.
+ *
+ * @see https://github.com/creattico/yeastar-http-sms The PHPMailer GitHub project
+ *
+ * @author    Domenico Carbone (creattico) <dev@creattica.it>
+ * @copyright 2020 Domenico Carbone
+ * @license   http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @note      This program is distributed in the hope that it will be useful - WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE.
+ */
+
 namespace YeastarHttp;
 
 class HttpApi
 {
+	/**
+	 * Http protocol for calls
+	 */
 	const DEBUG_OFF = 0;
 
 	const DEBUG_CLIENT = 1;
@@ -227,7 +245,7 @@ class HttpApi
 		$res = $this->sendSms();
 
 		switch ($this->debug) {
-			case 1:
+			case self::DEBUG_CLIENT:
 				return $res['response'];
 				break;
 
